@@ -6,6 +6,11 @@ module.exports = async function (context, req) {
         args: ['--no-sandbox']
     });
     const page = await browser.newPage();
+    await page.setViewport({
+        width: 1280,
+        height: 720,
+        deviceScaleFactor: 1,
+    });
     await page.goto(url);
     const screenshotBuffer = await page.screenshot({ fullPage: true });
     await browser.close();
