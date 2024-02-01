@@ -7,7 +7,6 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
-    "puppeteer": "^21"
-  },
-  "devDependencies": {}
+    "puppeteer": "^21.10.0"
+  }
 }
